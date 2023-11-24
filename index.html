@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Google Analytics Tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K1EGN6W9ZH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-K1EGN6W9ZH');
+</script>
+
+    <!-- HTML Code Formatter -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+        <!-- Other head elements -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <script src="script.js"></script>
+    <title>ChairGPT - seating solutions in seconds!</title>
+</head>
+<body>
+    <div class="container">
+        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a02b1996558277.5eb144c2f22a5.gif" alt="Blob Chair Gif" style="width: 50%;">
+    
+        <h1>Ch<i>ai</i>rGPT  <br>
+        ai meets artistry <br>
+        plan your perfect party </h1><br>
+
+<center>       
+
+
+    <!-- Input for Guest List -->
+        <label for="guestList">Who's invited?</label>
+        <textarea id="guestList" rows="5" placeholder="Craft the perfect Seating Symphony! Input your guestlist + any juicy details. We'll use the data to curate new connections over dinner & drinks! "></textarea>
+        <!-- Input for Number of Tables --><br>
+        <label for="numTables">How many tables?</label>
+        <input type="number" id="numTables" min="1" value="1">
+
+        <!-- Dropdown for Vibe Selection --><br>
+        <label for="vibe">What's the vibe?</label>
+        <select id="vibe">
+            <option value="chic">Chic & Cheerful</option>
+            <option value="mingle">Mingle Madness</option>
+            <option value="rowdy">Rowdy Revelry</option>
+        </select>
+
+        <!-- Button to Generate Seating -->
+        <br><br>
+        <button onclick="generateSeating()">Let's Go!</button>
+
+        <div id="loadingIndicator" style="display: none;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ad/YouTube_loading_symbol_3_%28transparent%29.gif" alt="Loading GIF" style="width: 10%;">
+          </div>
+
+        <!-- Container to Display Seating Result -->
+        <div id="seatingResult"></div>
+    </div>
+
+</center>
+
+</body>
+</html>
