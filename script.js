@@ -1,7 +1,3 @@
-require('dotenv').config();
-
-console.log('API Key:', process.env.YOUR_API_KEY);
-
 
 function redirectToShowSeating() {
     window.location.href = 'results.html';
