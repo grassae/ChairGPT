@@ -27,7 +27,7 @@ async function generateSeating() {
 
 async function callChatGPTAPI(guestList, numTables, vibe) {
     // Replace 'YOUR_API_KEY' with your actual API key
-    const apiKey = ${{ secrets.API_KEY }};
+    const apiKey = secrets.API_KEY;
     const apiUrl = 'https://api.openai.com/v1/chat/completions';
 
 
